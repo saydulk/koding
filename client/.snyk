@@ -1,0 +1,24 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - lodash:
+        patched: '2020-05-01T02:40:33.085Z'
+    - '@koding/inherits-underscore > lodash':
+        patched: '2020-05-01T02:40:33.085Z'
+    - async > lodash:
+        patched: '2020-05-01T02:40:33.085Z'
+    - kd.js > lodash:
+        patched: '2020-05-01T02:40:33.085Z'
+    - react-redux > lodash:
+        patched: '2020-05-01T02:40:33.085Z'
+    - redux > lodash:
+        patched: '2020-05-01T02:40:33.085Z'
+    - redux-form > lodash:
+        patched: '2020-05-01T02:40:33.085Z'
+    - '@koding/shortcuts > @koding/keyconfig > lodash':
+        patched: '2020-05-01T02:40:33.085Z'
+    - '@koding/shortcuts > @koding/keyconfig > @koding/inherits-underscore > lodash':
+        patched: '2020-05-01T02:40:33.085Z'
