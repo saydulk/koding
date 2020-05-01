@@ -13,7 +13,9 @@
   "scripts": {
     "preinstall": "./.npm-preinstall.sh",
     "install": "./.npm-install.sh",
-    "postinstall": "./.npm-postinstall.sh"
+    "postinstall": "./.npm-postinstall.sh",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "engines": {
     "node": "6"
@@ -116,7 +118,8 @@
     "winston": "2.3.0",
     "winston-papertrail": "1.0.4",
     "xml2js": "0.4.17",
-    "yield-siftscience": "0.2.0"
+    "yield-siftscience": "0.2.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "chai": "3.5.0",
@@ -128,5 +131,6 @@
     "sync-request": "4.0.1",
     "which": "1.2.12"
   },
-  "optionalDependencies": {}
+  "optionalDependencies": {},
+  "snyk": true
 }
